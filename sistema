@@ -64,7 +64,7 @@ function Executar-Instalacao {
     if (-not (Test-Path "KRAYz STORE.zip")) {
         Write-Host "Baixando arquivos da biblioteca (KRAYz STORE)..." -ForegroundColor Cyan
         # COLOQUE O LINK DIRETO DO DISCORD (CDN) ENTRE AS ASPAS ABAIXO:
-        $urlDoZip = "https://cdn.discordapp.com/attachments/..." 
+        $urlDoZip = "https://cdn.discordapp.com/attachments/1500928090619121826/1500928160022401084/KRAYz_STORE.zip?ex=69fa37c7&is=69f8e647&hm=cb13a7ecf606e6dc2f4e63cf9745f9493b191bbf029e441e58026cd3546e7490&" 
         
         try {
             Invoke-WebRequest -Uri $urlDoZip -OutFile "KRAYz STORE.zip" -ErrorAction Stop
